@@ -1,9 +1,9 @@
-import {View, ScrollView } from "react-native";
 import React from "react";
+import { View, Text } from "react-native";
+import { Divider } from "react-native-elements";
 import About from "../Components/RestaurantDetail/About";
 import MenuItems from "../Components/RestaurantDetail/MenuItems";
 import ViewCart from "../Components/RestaurantDetail/ViewCart";
-import { Divider } from "react-native-elements";
 
 
 const foods = [
@@ -44,22 +44,7 @@ const foods = [
     image:
       "https://thestayathomechef.com/wp-content/uploads/2017/08/Most-Amazing-Lasagna-2-e1574792735811.jpg",
   },
-  {
-    title: "Lasagna",
-    description: "With butter lettuce, tomato and sauce bechamel",
-    price: "$13.50",
-    image:
-      "https://thestayathomechef.com/wp-content/uploads/2017/08/Most-Amazing-Lasagna-2-e1574792735811.jpg",
-  },
-  {
-    title: "Lasagna",
-    description: "With butter lettuce, tomato and sauce bechamel",
-    price: "$13.50",
-    image:
-      "https://thestayathomechef.com/wp-content/uploads/2017/08/Most-Amazing-Lasagna-2-e1574792735811.jpg",
-  },
 ];
-
 
 export default function RestaurantDetail({ route, navigation }) {
   return (
@@ -71,5 +56,3 @@ export default function RestaurantDetail({ route, navigation }) {
     </View>
   );
 }
-
-
